@@ -1,0 +1,10 @@
+.botao {
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: .35rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}

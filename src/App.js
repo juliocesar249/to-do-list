@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Cabecario from './componentes/Cabecario';
+import Principal from './componentes/Principal';
+import './reset.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cabecario/>
+      <Principal/>
     </div>
   );
 }

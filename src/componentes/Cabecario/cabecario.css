@@ -1,0 +1,12 @@
+.cabecario {
+    background-color: #003b6b;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cabecario__titulo {
+    color: #fff;
+    font-family: 'Diphylleia', serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
