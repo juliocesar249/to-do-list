@@ -1,0 +1,14 @@
+.principal__lista {
+    background: #003b6b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.vazio {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}

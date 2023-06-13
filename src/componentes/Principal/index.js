@@ -1,16 +1,23 @@
-import Botao from '../Botao';
 import './principal.css';
-import { AiOutlinePlusCircle } from 'react-icons/ai';
-import Campo from '../Campo';
+import { useState } from 'react';
+import Formulario from '../Formulario';
+import Lista from '../Lista';
+
 
 const Principal = () => {
+    const [notas, setNotas] = useState([]);
+
+    function aoAdicionarNota(nota) {
+        setNotas([...notas, nota]);
+    }
+
+    function aoDeletarNota(id) {
+        setNotas(notas.filter(nota => nota.id != id));
+    }
+
     return <main className='principal'>
-        <div className='principal__adicionar'>
-            <form className='adicionar__formulario'>
-                <Campo tipo={'text'}/>
-                <Botao tipo={'submit'} texto={<AiOutlinePlusCircle size={30} className='adicionar'/>}/>
-            </form>
-        </div>
+        <Formulario aoAdicionarNota={aoAdicionarNota}/>
+        <Lista notas={notas} aoDeletarNota={aoDeletarNota}/>
     </main>
 }
 
