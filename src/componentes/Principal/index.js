@@ -12,7 +12,7 @@ const Principal = () => {
     }
 
     function aoDeletarNota(id) {
-        setNotas(notas.filter(nota => nota.id != id));
+        setNotas(notas.filter(nota => nota.id !== id));
     }
 
     return <main className='principal'>
